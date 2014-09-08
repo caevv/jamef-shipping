@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Pedro Teixeira
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL).
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Correio
+ * @package    Jamef_Shipping
+ * @copyright  Copyright (c) 2009 Pedro Teixeira [ pedro@pteixeira.com.br ]
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Jamef_Shipping>
+            <version>0.1.0</version>
+            <depends>
+                <Mage_Shipping />
+            </depends>
+        </Jamef_Shipping>
+    </modules>
+    <global>
+    	<models>
+    		<tmshipping>
+	    		<class>Jamef_Shipping</class>
+	    	</tmshipping>
+    	</models>
+        <resources>
+            <tmshipping_setup>
+                <setup>
+                    <module>Jamef_Shipping</module>
+                </setup>
+                <connection>
+                    <use>directory_setup</use>
+                </connection>
+            </tmshipping_setup>
+            <tmshipping_read>
+                <connection>
+                    <use>local_read</use>
+                </connection>
+            </tmshipping_read>
+        </resources>
+        <sales>
+			<quote>
+                <item>
+                    <product_attributes>
+                        <volume_altura/>
+                        <volume_comprimento/>
+                        <volume_largura/>
+                    </product_attributes>
+                </item>
+            </quote>
+            <shipping>
+                <carriers>
+                    <jamef><class>Jamef_Shipping_Model_Carrier_EnvioJamef</class>
+                    </jamef>
+				</carriers>
+            </shipping>
+        </sales>
+    </global>
+
+    <default>
+        <carriers>
+            <jamef><active>1</active>
+				<model>Jamef_Shipping_Model_Carrier_EnvioJamef</model>
+                <title>Jamef</title>
+				<name>jamef</name>
+				<prazo_entrega>0</prazo_entrega>
+				<min_order_value>0</min_order_value>
+                <max_order_value>100000</max_order_value>
+				<maxweight>1000</maxweight>
+                <handling_fee>10</handling_fee>
+				<msgprazo>%s - Em média %d dia(s)</msgprazo>
+				<valueerror>Valor de compra acima do permitido. Por favor entre em contato conosco.</valueerror>
+				<zipcodeerror>Por favor, corrija o CEP digitado, ele não está correto.</zipcodeerror>
+				<maxweighterror>Peso dos produtos a cima do permitido. Por favor entre em contato conosco.</maxweighterror>
+				<urlerror>Esse método de envio está fora do ar. Por favor entre em contato conosco.</urlerror>
+				<showmethod>0</showmethod>				
+            </jamef></carriers>
+    </default>
+</config>
