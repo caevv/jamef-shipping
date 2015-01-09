@@ -1,6 +1,5 @@
 <?php
 /**
- * Pedro Teixeira
  *
  * NOTICE OF LICENSE
  *
@@ -8,28 +7,28 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/osl-3.0.php
  *
- * @category   Correio
- * @package    Correio_Shipping
- * @copyright  Copyright (c) 2009 Pedro Teixeira [ pedro@pteixeira.com.br ]
+ * @category   Jamef
+ * @package    Jamef_Shipping
+ * @copyright  Copyright (c) 2014 Cae Vecchi
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 /**
  * Correios shipping model
  *
- * @category   Correio
- * @package    Correio_Shipping
- * @author     Pedro Teixeira <pedro@pteixeira.com.br>
+ * @category   Jamef
+ * @package    Jamef_Shipping
+ * @author     Cae Vecchi
  */
  
 /**
- * Observações sobre a instalação
+ * ObservaÃ§Ãµes sobre a instalaÃ§Ã£o
  *
- * O Array $shipping_methods contém todos os códigos dos serviços dos correios seguidos de seus
+ * O Array $shipping_methods contÃ©m todos os cÃ³digos dos serviÃ§os dos correios seguidos de seus
  * nomes e prazos de entrega, prazos esses que foram ajustados de acordo com a necessidade do
- * desenvolvedor, caso ache necessário, é só modificá-los.
+ * desenvolvedor, caso ache necessÃ¡rio, Ã© sÃ³ modificÃ¡-los.
  * 
- * O restante das configurações pode ser feita acessando a área administrativa de sua loja.
+ * O restante das configuraÃ§Ãµes pode ser feita acessando a Ã¡rea administrativa de sua loja.
  */
  
 class Jamef_Shipping_Model_Carrier_EnvioJamef
