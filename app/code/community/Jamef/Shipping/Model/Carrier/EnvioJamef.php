@@ -1,6 +1,6 @@
 <?php
 /**
- * Pedro Teixeira
+ * Cae Vecchi
  *
  * NOTICE OF LICENSE
  *
@@ -8,18 +8,18 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/osl-3.0.php
  *
- * @category   Correio
- * @package    Correio_Shipping
- * @copyright  Copyright (c) 2009 Pedro Teixeira [ pedro@pteixeira.com.br ]
+ * @category   Jamef
+ * @package    Jamef_Shipping
+ * @copyright  Copyright (c) 2009 Cae Vecchi [ carlos@vecchi.me ]
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 /**
  * Correios shipping model
  *
- * @category   Correio
- * @package    Correio_Shipping
- * @author     Pedro Teixeira <pedro@pteixeira.com.br>
+ * @category   Jamef
+ * @package    Jamef_Shipping
+ * @author     Cae Vecchi <carlos@vecchi.me>
  */
  
 /**

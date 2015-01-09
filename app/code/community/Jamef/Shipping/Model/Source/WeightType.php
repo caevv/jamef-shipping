@@ -1,6 +1,6 @@
 <?php
 /**
- * Pedro Teixeira
+ * Cae Vecchi
  *
  * NOTICE OF LICENSE
  *
@@ -10,8 +10,8 @@
  *
  * @category   PedroTeixeira
  * @package    PedroTeixeira_Correios
- * @copyright  Copyright (c) 2011 Pedro Teixeira (http://www.pteixeira.com.br)
- * @author     Pedro Teixeira <pedro@pteixeira.com.br>
+ * @copyright  Copyright (c) 2011 Cae Vecchi (http://www.pteixeira.com.br)
+ * @author     Cae Vecchi <carlos@vecchi.me>
  * @license    http://www.pteixeira.com.br/new-bsd-license/ New BSD License
  */
 
