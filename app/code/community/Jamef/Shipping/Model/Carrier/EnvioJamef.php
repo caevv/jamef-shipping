@@ -143,8 +143,7 @@ class Jamef_Shipping_Model_Carrier_EnvioJamef
 		
 
 		try { 
-			//Mage::log($retorno = $this->CalcFreteJamef("05549856000134","32210130","1000,00","10,00","0,0096","1","MG"));
-			$retorno = $this->CalcFreteJamef("57342735000110",$topcode,$valor,$peso,$this->_volumeWeight,"121","SP");
+				$retorno = $this->CalcFreteJamef($this->getConfigData('cnpj'),$topcode,$valor,$peso,$this->_volumeWeight,$this->getConfigData('filial_jamef'),$this->getConfigData('uf_jamef'));
 			
 		} catch (Exception $e) {
 			$error->setErrorMessage($this->getConfigData('urlerror'));

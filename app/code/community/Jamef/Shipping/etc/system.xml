@@ -36,19 +36,10 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </active>
-						<prazo_entrega translate="label">
-                            <label>Exibir Prazo de Entrega</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>adminhtml/system_config_source_yesno</source_model>
-                            <sort_order>4</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </prazo_entrega>
 						<title translate="label">
                             <label>Título</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>5</sort_order>
+                            <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -56,11 +47,33 @@
 						<name translate="label">
                             <label>Nome</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>5</sort_order>
+                            <sort_order>3</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </name>
+						<cnpj translate="label">
+                            <label>CNPJ da sua Empresa</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cnpj>
+						<filial_jamef translate="label">
+                            <label>Filial da Jamef</label>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </filial_jamef>
+						<uf_jamef translate="label">
+                            <label>UF da Filial da Jamef</label>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </uf_jamef>
                         <min_order_value translate="label">
                         </min_order_value>
                         <max_order_value translate="label">
@@ -70,7 +83,7 @@
                         <handling_fee translate="label">
                             <label>Taxa de Postagem (%)</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>9</sort_order>
+                            <sort_order>7</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -84,7 +97,6 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <comment><![CDATA[Quando não configurada no produto será usada.<br />Mínimo de 2 cm.]]></comment>
                         </altura_padrao>
                         <comprimento_padrao translate="label">
                             <label>Comprimento Padrão (cm)</label>
@@ -93,7 +105,6 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <comment><![CDATA[Quando não configurado no produto será usado.<br />Mínimo de 16 cm.]]></comment>
                         </comprimento_padrao>
                         <largura_padrao translate="label">
                             <label>Largura Padrão (cm)</label>
@@ -102,16 +113,7 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <comment><![CDATA[Quando não configurada no produto será usada.<br />Mínimo de 11 cm.]]></comment>
-                        </largura_padrao>						
-						<valueerror translate="label">
-                            <label>Mensagem de valor fora do permitido</label>
-                            <frontend_type>textarea</frontend_type>
-                            <sort_order>20</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </valueerror>
+                        </largura_padrao>	
 						<zipcodeerror translate="label">
                             <label>Mensagem de CEP incorreto</label>
                             <frontend_type>textarea</frontend_type>
@@ -120,14 +122,6 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </zipcodeerror>
-						<maxweighterror translate="label">
-                            <label>Mensagem de peso fora do permitido</label>
-                            <frontend_type>textarea</frontend_type>
-                            <sort_order>22</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </maxweighterror>
 						<urlerror translate="label">
                             <label>Mensagem de URL fora do ar ou método de URL não selecionado</label>
                             <frontend_type>textarea</frontend_type>
@@ -136,38 +130,10 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </urlerror>
-						<sallowspecific translate="label">
-                            <label>Enviar para países possíveis</label>
-                            <frontend_type>select</frontend_type>
-                            <sort_order>90</sort_order>
-                            <frontend_class>shipping-applicable-country</frontend_class>
-                            <source_model>adminhtml/system_config_source_shipping_allspecificcountries</source_model>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </sallowspecific>
-                        <specificcountry translate="label">
-                            <label>Enviar para Países específicos</label>
-                            <frontend_type>multiselect</frontend_type>
-                            <sort_order>91</sort_order>
-                            <source_model>adminhtml/system_config_source_country</source_model>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </specificcountry>
-                        <showmethod translate="label">
-                            <label>Mostra métodos se não aplicável</label>
-                            <frontend_type>select</frontend_type>
-                            <sort_order>92</sort_order>
-                            <source_model>adminhtml/system_config_source_yesno</source_model>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </showmethod>
 						<sort_order translate="label">
                             <label>Ordenar por</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>100</sort_order>
+                            <sort_order>200</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
